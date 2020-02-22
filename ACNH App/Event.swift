@@ -12,21 +12,23 @@ import Foundation
 
 class Event
 {
-
     var name:String
     var desc:String
     var imgURL:String
-    var day:Int
-    var month:Int
+    var dayStart:Int
+    var monthStart:Int
+    var year:Int
     
-    init(name:String, desc:String, imgURL:String, day:Int, month:Int) {
-        self.name = name
-        self.desc = desc
-        self.imgURL = imgURL
-        self.day = day
-        self.month = month
-        
-    }
+    init(name:String, desc:String, imgURL:String, dayStart:Int, monthStart:Int, year: Int)
+        {
+            self.year = year
+            self.name = name
+            self.desc = desc
+            self.imgURL = imgURL
+            self.dayStart = dayStart
+            self.monthStart = monthStart
+        }
+    
 }
     
     

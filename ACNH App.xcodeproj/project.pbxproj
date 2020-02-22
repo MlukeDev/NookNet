@@ -22,7 +22,7 @@
 
 /* Begin PBXFileReference section */
 		0E4453E51220F7841FF155CE /* Pods-ACNH App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACNH App.release.xcconfig"; path = "Target Support Files/Pods-ACNH App/Pods-ACNH App.release.xcconfig"; sourceTree = "<group>"; };
-		C90E361223EA3AD700B2EBE2 /* ACNH App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ACNH App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C90E361223EA3AD700B2EBE2 /* NookNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NookNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90E361523EA3AD700B2EBE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C90E361723EA3AD700B2EBE2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C90E361C23EA3AD700B2EBE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 		C90E361323EA3AD700B2EBE2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C90E361223EA3AD700B2EBE2 /* ACNH App.app */,
+				C90E361223EA3AD700B2EBE2 /* NookNet.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,7 +122,7 @@
 			);
 			name = "ACNH App";
 			productName = "ACNH App";
-			productReference = C90E361223EA3AD700B2EBE2 /* ACNH App.app */;
+			productReference = C90E361223EA3AD700B2EBE2 /* NookNet.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -377,9 +377,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MlukeApps.ACNH-App";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = NookNet;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -396,9 +396,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MlukeApps.ACNH-App";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = NookNet;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

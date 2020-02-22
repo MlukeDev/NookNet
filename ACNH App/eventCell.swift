@@ -36,11 +36,11 @@ class eventCell: UITableViewCell {
     
     func set(event:Event)
     {
-        let eventDate = "\(event.month)/\(event.day)/2020"
+        let eventDate = "\(event.monthStart)/\(event.dayStart)/\(event.year)"
         dateLabel.text = eventDate
         eventTitle.text = event.name
         eventDescription.text = event.desc
-        let url : URL = URL(string: event.imgURL) ?? URL(string: "https://images.nintendolife.com/f63528d62e99d/animal-crossing-new-horizons.900x.jpg")!
+        let url : URL = URL(string: event.imgURL) ?? URL(string: "https://firebasestorage.googleapis.com/v0/b/acnh-guide.appspot.com/o/Wallpapers%2Fk2-_cf527332-1589-4381-9765-f62cec08a67d.v1.jpg?alt=media&token=8d070fe4-d238-4bf5-a9d2-e9e7277c5a83")!
         eventImage.sd_setImage(with: url)
     }
 

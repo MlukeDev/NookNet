@@ -14,9 +14,12 @@ class IslandNameVC: UIViewController {
     
     var islandName = "Your Town"
     let defaults = UserDefaults.standard
+    @IBOutlet weak var confirmButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        confirmButton.layer.cornerRadius = 10
         
         let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
         view.addGestureRecognizer(tap)
