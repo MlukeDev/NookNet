@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>64421492536-uj1j2fd1bvm0uu5ktd4ffkhm38u1m8ei.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.64421492536-uj1j2fd1bvm0uu5ktd4ffkhm38u1m8ei</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCqMh8BwkXg7ZQDtX66_QrjJLy36LzpT1o</string>
+	<key>GCM_SENDER_ID</key>
+	<string>64421492536</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.MlukeApps.ACNH-App</string>
+	<key>PROJECT_ID</key>
+	<string>acnh-guide</string>
+	<key>STORAGE_BUCKET</key>
+	<string>acnh-guide.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:64421492536:ios:90780237c7779931adf3cd</string>
+	<key>DATABASE_URL</key>
+	<string>https://acnh-guide.firebaseio.com</string>
+</dict>
+</plist>
