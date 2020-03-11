@@ -15,15 +15,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Leaf Transparent-1" translatesAutoresizingMaskIntoConstraints="NO" id="ege-MV-TQg">
-                                <rect key="frame" x="157" y="398" width="100" height="100"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nooknet-logo" translatesAutoresizingMaskIntoConstraints="NO" id="ege-MV-TQg">
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="FHP-1b-QZA"/>
-                                    <constraint firstAttribute="height" constant="100" id="xrI-dx-7iM"/>
+                                    <constraint firstAttribute="width" constant="200" id="FHP-1b-QZA"/>
+                                    <constraint firstAttribute="height" constant="200" id="xrI-dx-7iM"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.3633034825" green="0.75682407620000003" blue="0.67179793119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ege-MV-TQg" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="DM7-cp-CDZ"/>
                             <constraint firstItem="ege-MV-TQg" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="mf5-rk-Urd"/>
@@ -33,10 +33,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Leaf Transparent-1" width="6401" height="6401"/>
+        <image name="nooknet-logo" width="864" height="864"/>
     </resources>
 </document>

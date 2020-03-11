@@ -21,7 +21,7 @@ class todayPage: UIViewController, UITableViewDataSource, UITableViewDelegate {
     let defaults = UserDefaults.standard
     let timeInterval = NSDate().timeIntervalSince1970
     
-    @IBOutlet weak var islandNameText: UILabel!
+    @IBOutlet weak var navBar: UINavigationItem!
     @IBOutlet weak var eventTableView: UITableView!
     
     override func viewDidLoad()
@@ -30,6 +30,9 @@ class todayPage: UIViewController, UITableViewDataSource, UITableViewDelegate {
         //Grabs default values
         isNotFirstTime = defaults.bool(forKey: "isNotFirstTime")
       //  islandNameText.text = defaults.string(forKey: "islandName")
+      
+        let name = defaults.string(forKey: "islandName")
+        navBar.title = "Today on \(name ?? "Your Island")"
         
         //Sends query to Firebase and populates tableview
         let dateFormat = DateFormatter()
@@ -108,7 +111,7 @@ class todayPage: UIViewController, UITableViewDataSource, UITableViewDelegate {
         let sourceViewController = unwindSegue.source as? IslandNameVC
         let name = sourceViewController?.islandName
         defaults.set(name, forKey: "islandName")
-        islandNameText.text = name
+        navBar.title = "Today on \(name ?? "Your Island")"
     }
     
     

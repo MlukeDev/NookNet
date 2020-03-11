@@ -7,31 +7,33 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Settings-->
         <scene sceneID="xbU-CB-ooy">
             <objects>
-                <viewController id="dSZ-oN-Y1i" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="dSZ-oN-Y1i" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qy2-KN-ed5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TzS-FO-o9a">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
-                                <items>
-                                    <navigationItem title="Settings" id="amc-s6-qz9"/>
-                                </items>
-                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AM2-UQ-sWC">
+                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="TzS-FO-o9a" firstAttribute="top" secondItem="Qy2-KN-ed5" secondAttribute="top" id="FN4-KM-TDh"/>
+                            <constraint firstItem="AM2-UQ-sWC" firstAttribute="top" secondItem="MLg-0N-pU5" secondAttribute="top" id="Afu-km-Hbb"/>
+                            <constraint firstItem="MLg-0N-pU5" firstAttribute="trailing" secondItem="AM2-UQ-sWC" secondAttribute="trailing" id="ghH-IF-P4o"/>
+                            <constraint firstItem="AM2-UQ-sWC" firstAttribute="leading" secondItem="MLg-0N-pU5" secondAttribute="leading" id="o5k-aq-OKb"/>
+                            <constraint firstItem="MLg-0N-pU5" firstAttribute="bottom" secondItem="AM2-UQ-sWC" secondAttribute="bottom" id="pHN-SK-ZRw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MLg-0N-pU5"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Settings" id="j4k-a6-HAB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HgY-Uy-CHy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3542" y="1292"/>
+            <point key="canvasLocation" x="-3543.75" y="1290.8450704225352"/>
         </scene>
         <!--Island NameVC-->
         <scene sceneID="PAw-5s-ICs">
@@ -139,7 +141,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Cdq-oJ-WC6">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <color key="sectionIndexBackgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="myCell" rowHeight="490" id="9mX-zk-Vz8" userLabel="myCell" customClass="eventCell" customModule="NookNet" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="55.333332061767578" width="414" height="490"/>
@@ -260,7 +261,6 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="Cdq-oJ-WC6" secondAttribute="bottom" id="18V-mx-Gh3"/>
                             <constraint firstItem="Cdq-oJ-WC6" firstAttribute="trailing" secondItem="vO7-kH-NOU" secondAttribute="trailing" id="Owf-B6-dSc"/>
@@ -273,20 +273,19 @@
                     <navigationItem key="navigationItem" title="Today in Mattown" largeTitleDisplayMode="always" id="0vr-T1-RY6">
                         <barButtonItem key="rightBarButtonItem" image="wrench.fill" catalog="system" id="wAk-Wv-sML">
                             <connections>
-                                <segue destination="dSZ-oN-Y1i" kind="popoverPresentation" popoverAnchorBarButtonItem="wAk-Wv-sML" id="KBv-Xe-kbs">
-                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                </segue>
+                                <segue destination="dSZ-oN-Y1i" kind="show" id="KBv-Xe-kbs"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="eventTableView" destination="Cdq-oJ-WC6" id="d6M-hY-KQU"/>
+                        <outlet property="navBar" destination="0vr-T1-RY6" id="yVW-WE-U8D"/>
                         <segue destination="gmc-VY-rU7" kind="presentation" identifier="enterName" animates="NO" modalPresentationStyle="automatic" id="mGH-C5-F0V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mQ3-JC-d91" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1275.3623188405797" y="618.75"/>
+            <point key="canvasLocation" x="-3246" y="174"/>
         </scene>
         <!--Encyclopedia-->
         <scene sceneID="A6J-cZ-Kb0">
@@ -369,9 +368,7 @@
                     <navigationItem key="navigationItem" title="Encyclopedia" id="eRH-eB-Fok">
                         <barButtonItem key="rightBarButtonItem" image="wrench.fill" catalog="system" id="8HE-lT-xKC">
                             <connections>
-                                <segue destination="dSZ-oN-Y1i" kind="popoverPresentation" popoverAnchorBarButtonItem="8HE-lT-xKC" id="n8q-ad-bsj">
-                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                </segue>
+                                <segue destination="dSZ-oN-Y1i" kind="show" id="n8q-ad-bsj"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -413,7 +410,7 @@
                         <viewLayoutGuide key="safeArea" id="cPu-ZS-UvT"/>
                     </view>
                     <navigationItem key="navigationItem" title="Today" largeTitleDisplayMode="always" id="tyN-a9-lou">
-                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="LjJ-bh-CrU">
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="LjJ-bh-CrU">
                             <rect key="frame" x="50" y="6" width="297.33333333333331" height="32"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
@@ -425,9 +422,7 @@
                         </segmentedControl>
                         <barButtonItem key="rightBarButtonItem" image="wrench.fill" catalog="system" id="l9v-Ux-T2Y">
                             <connections>
-                                <segue destination="dSZ-oN-Y1i" kind="popoverPresentation" popoverAnchorBarButtonItem="l9v-Ux-T2Y" id="3XZ-Te-XtY">
-                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                </segue>
+                                <segue destination="dSZ-oN-Y1i" kind="show" id="3XZ-Te-XtY"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -462,9 +457,7 @@
                     <navigationItem key="navigationItem" title="Bugs" id="1ty-dx-qbl">
                         <barButtonItem key="rightBarButtonItem" image="wrench.fill" catalog="system" id="J90-4Y-Xyb">
                             <connections>
-                                <segue destination="dSZ-oN-Y1i" kind="popoverPresentation" popoverAnchorBarButtonItem="J90-4Y-Xyb" id="tR1-ka-XON">
-                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                </segue>
+                                <segue destination="dSZ-oN-Y1i" kind="show" id="tR1-ka-XON"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -499,9 +492,7 @@
                     <navigationItem key="navigationItem" title="Fish" id="NEB-fb-u6e">
                         <barButtonItem key="rightBarButtonItem" image="wrench.fill" catalog="system" id="ZZ6-xN-O5R">
                             <connections>
-                                <segue destination="dSZ-oN-Y1i" kind="popoverPresentation" popoverAnchorBarButtonItem="ZZ6-xN-O5R" id="9AO-92-LYe">
-                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                </segue>
+                                <segue destination="dSZ-oN-Y1i" kind="show" id="9AO-92-LYe"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -536,9 +527,7 @@
                     <navigationItem key="navigationItem" title="Deep Sea" id="Hqr-R8-DNz">
                         <barButtonItem key="rightBarButtonItem" image="wrench.fill" catalog="system" id="T5Q-Z0-ZrS">
                             <connections>
-                                <segue destination="dSZ-oN-Y1i" kind="popoverPresentation" popoverAnchorBarButtonItem="T5Q-Z0-ZrS" id="l4Q-Up-4xY">
-                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                </segue>
+                                <segue destination="dSZ-oN-Y1i" kind="show" id="l4Q-Up-4xY"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -572,7 +561,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FkC-dC-TNN">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FkC-dC-TNN">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
@@ -586,7 +575,7 @@
                                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mD0-4O-CMp">
                                                     <rect key="frame" x="20" y="10" width="374" height="100"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5464e620cf29c2dd95a4f315b6379472" translatesAutoresizingMaskIntoConstraints="NO" id="o3I-nv-a4u">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5464e620cf29c2dd95a4f315b6379472" translatesAutoresizingMaskIntoConstraints="NO" id="o3I-nv-a4u">
                                                             <rect key="frame" x="18" y="10" width="80" height="80"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="80" id="ckv-pQ-HeY"/>
@@ -602,7 +591,7 @@
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have 0/100 collected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="1" translatesAutoresizingMaskIntoConstraints="NO" id="OiW-4a-dUD">
                                                             <rect key="frame" x="108" y="59" width="232" height="21"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                                            <nil key="textColor"/>
+                                                            <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="g4E-7O-aZM">
@@ -660,9 +649,7 @@
                     <navigationItem key="navigationItem" title="Collections" id="kFf-tx-VR2">
                         <barButtonItem key="rightBarButtonItem" image="wrench.fill" catalog="system" id="ZV6-Ih-len">
                             <connections>
-                                <segue destination="dSZ-oN-Y1i" kind="popoverPresentation" popoverAnchorBarButtonItem="ZV6-Ih-len" id="ywp-RP-DK6">
-                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                </segue>
+                                <segue destination="dSZ-oN-Y1i" kind="show" id="ywp-RP-DK6"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -672,7 +659,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DPt-zg-S6T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1279.7101449275362" y="1974.7767857142856"/>
+            <point key="canvasLocation" x="-1275" y="1977"/>
         </scene>
         <!--Fossils-->
         <scene sceneID="BhJ-qr-X8B">
@@ -700,9 +687,7 @@
                     <navigationItem key="navigationItem" title="Fossils" id="j21-5f-Hxk">
                         <barButtonItem key="rightBarButtonItem" image="wrench.fill" catalog="system" id="bCz-pf-9F6">
                             <connections>
-                                <segue destination="dSZ-oN-Y1i" kind="popoverPresentation" popoverAnchorBarButtonItem="bCz-pf-9F6" id="1DO-w2-anF">
-                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                </segue>
+                                <segue destination="dSZ-oN-Y1i" kind="show" id="1DO-w2-anF"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -737,9 +722,7 @@
                     <navigationItem key="navigationItem" title="Art" id="nc4-g9-meB">
                         <barButtonItem key="rightBarButtonItem" image="wrench.fill" catalog="system" id="MoD-er-JCm">
                             <connections>
-                                <segue destination="dSZ-oN-Y1i" kind="popoverPresentation" popoverAnchorBarButtonItem="MoD-er-JCm" id="aiF-dy-uHD">
-                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                </segue>
+                                <segue destination="dSZ-oN-Y1i" kind="show" id="aiF-dy-uHD"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -774,9 +757,7 @@
                     <navigationItem key="navigationItem" title="Gyroids" id="Ym7-Cw-Q5b">
                         <barButtonItem key="rightBarButtonItem" image="wrench.fill" catalog="system" id="u5e-mb-5Ht">
                             <connections>
-                                <segue destination="dSZ-oN-Y1i" kind="popoverPresentation" popoverAnchorBarButtonItem="u5e-mb-5Ht" id="8qi-yg-0ex">
-                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                </segue>
+                                <segue destination="dSZ-oN-Y1i" kind="show" id="8qi-yg-0ex"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -811,9 +792,7 @@
                     <navigationItem key="navigationItem" title="Songs" id="L1O-EP-Qoj">
                         <barButtonItem key="rightBarButtonItem" image="wrench.fill" catalog="system" id="ao2-64-BJf">
                             <connections>
-                                <segue destination="dSZ-oN-Y1i" kind="popoverPresentation" popoverAnchorBarButtonItem="ao2-64-BJf" id="Bxa-0i-CEL">
-                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                </segue>
+                                <segue destination="dSZ-oN-Y1i" kind="show" id="Bxa-0i-CEL"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -859,7 +838,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="KBv-Xe-kbs"/>
+        <segue reference="l4Q-Up-4xY"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="5464e620cf29c2dd95a4f315b6379472" width="400" height="400"/>

@@ -20,6 +20,7 @@
 		C983C84823EA819D00B30483 /* todayPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983C84723EA819D00B30483 /* todayPage.swift */; };
 		C983C84C23EA830D00B30483 /* eventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983C84B23EA830D00B30483 /* eventCell.swift */; };
 		C9FDE13A23EF577700C9FEB4 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FDE13923EF577700C9FEB4 /* Event.swift */; };
+		C9FFBED82401D7920045B87E /* CollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FFBED72401D7920045B87E /* CollectionType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		C983C84723EA819D00B30483 /* todayPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todayPage.swift; sourceTree = "<group>"; };
 		C983C84B23EA830D00B30483 /* eventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventCell.swift; sourceTree = "<group>"; };
 		C9FDE13923EF577700C9FEB4 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		C9FFBED72401D7920045B87E /* CollectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionType.swift; sourceTree = "<group>"; };
 		DE1C8861624BE5C2C1B9549A /* Pods_ACNH_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACNH_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBDF0A602663933F366449C2 /* Pods-ACNH App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACNH App.debug.xcconfig"; path = "Target Support Files/Pods-ACNH App/Pods-ACNH App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +102,7 @@
 				C95E420123EFC69100B98AF8 /* IslandNameVC.swift */,
 				C983C84723EA819D00B30483 /* todayPage.swift */,
 				C9FDE13923EF577700C9FEB4 /* Event.swift */,
+				C9FFBED72401D7920045B87E /* CollectionType.swift */,
 				C983C84B23EA830D00B30483 /* eventCell.swift */,
 				C90E361E23EA3ADA00B2EBE2 /* Assets.xcassets */,
 				C90E362023EA3ADA00B2EBE2 /* LaunchScreen.storyboard */,
@@ -230,6 +233,7 @@
 				C90E361623EA3AD700B2EBE2 /* AppDelegate.swift in Sources */,
 				C93D4D902400FF02006809CD /* CollectionCell.swift in Sources */,
 				C9FDE13A23EF577700C9FEB4 /* Event.swift in Sources */,
+				C9FFBED82401D7920045B87E /* CollectionType.swift in Sources */,
 				C95E420223EFC69100B98AF8 /* IslandNameVC.swift in Sources */,
 				C93D4D8E2400FE4A006809CD /* CollectionsVC.swift in Sources */,
 				C90E361823EA3AD700B2EBE2 /* SceneDelegate.swift in Sources */,

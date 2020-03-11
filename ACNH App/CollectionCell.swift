@@ -27,5 +27,13 @@ class CollectionCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    func set(collectionType:CollectionType)
+    {
+        titleLabel.text = collectionType.name
+        descLabel.text = collectionType.desc
+        iconView.image = UIImage(named: collectionType.imgPath)
+    }
+
 
 }
