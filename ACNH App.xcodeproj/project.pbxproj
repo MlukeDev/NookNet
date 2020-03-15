@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22701EF4F4B707750C499C73 /* Pods_ACNH_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE1C8861624BE5C2C1B9549A /* Pods_ACNH_App.framework */; };
+		64FCA1B4220913EAD6EDE2BA /* Pods_ACNH_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33BF2177BD1EDC6CABFB6B8C /* Pods_ACNH_App.framework */; };
 		C90E361623EA3AD700B2EBE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90E361523EA3AD700B2EBE2 /* AppDelegate.swift */; };
 		C90E361823EA3AD700B2EBE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90E361723EA3AD700B2EBE2 /* SceneDelegate.swift */; };
 		C90E361D23EA3AD700B2EBE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90E361B23EA3AD700B2EBE2 /* Main.storyboard */; };
@@ -24,7 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0E4453E51220F7841FF155CE /* Pods-ACNH App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACNH App.release.xcconfig"; path = "Target Support Files/Pods-ACNH App/Pods-ACNH App.release.xcconfig"; sourceTree = "<group>"; };
+		33BF2177BD1EDC6CABFB6B8C /* Pods_ACNH_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACNH_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45374AC4C329B3CE0B2B5585 /* Pods-ACNH App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACNH App.debug.xcconfig"; path = "Target Support Files/Pods-ACNH App/Pods-ACNH App.debug.xcconfig"; sourceTree = "<group>"; };
+		57E570E27F78095C5DEB6AD4 /* Pods-ACNH App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACNH App.release.xcconfig"; path = "Target Support Files/Pods-ACNH App/Pods-ACNH App.release.xcconfig"; sourceTree = "<group>"; };
 		C90E361223EA3AD700B2EBE2 /* NookNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NookNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90E361523EA3AD700B2EBE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C90E361723EA3AD700B2EBE2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,8 +42,6 @@
 		C983C84B23EA830D00B30483 /* eventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventCell.swift; sourceTree = "<group>"; };
 		C9FDE13923EF577700C9FEB4 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		C9FFBED72401D7920045B87E /* CollectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionType.swift; sourceTree = "<group>"; };
-		DE1C8861624BE5C2C1B9549A /* Pods_ACNH_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACNH_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FBDF0A602663933F366449C2 /* Pods-ACNH App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACNH App.debug.xcconfig"; path = "Target Support Files/Pods-ACNH App/Pods-ACNH App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,26 +49,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22701EF4F4B707750C499C73 /* Pods_ACNH_App.framework in Frameworks */,
+				64FCA1B4220913EAD6EDE2BA /* Pods_ACNH_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		149C1BD910E86EE5D80DF194 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DE1C8861624BE5C2C1B9549A /* Pods_ACNH_App.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		678ABC66F35BDE25C4339458 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FBDF0A602663933F366449C2 /* Pods-ACNH App.debug.xcconfig */,
-				0E4453E51220F7841FF155CE /* Pods-ACNH App.release.xcconfig */,
+				45374AC4C329B3CE0B2B5585 /* Pods-ACNH App.debug.xcconfig */,
+				57E570E27F78095C5DEB6AD4 /* Pods-ACNH App.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -79,7 +71,7 @@
 				C90E361423EA3AD700B2EBE2 /* ACNH App */,
 				C90E361323EA3AD700B2EBE2 /* Products */,
 				678ABC66F35BDE25C4339458 /* Pods */,
-				149C1BD910E86EE5D80DF194 /* Frameworks */,
+				E1732E95FCB2BE1207F61251 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +104,14 @@
 			path = "ACNH App";
 			sourceTree = "<group>";
 		};
+		E1732E95FCB2BE1207F61251 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33BF2177BD1EDC6CABFB6B8C /* Pods_ACNH_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,11 +119,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C90E362623EA3ADA00B2EBE2 /* Build configuration list for PBXNativeTarget "ACNH App" */;
 			buildPhases = (
-				09488E8949FE072B767C2EF3 /* [CP] Check Pods Manifest.lock */,
+				9CCF91CEFA0994807860BB0F /* [CP] Check Pods Manifest.lock */,
 				C90E360E23EA3AD700B2EBE2 /* Sources */,
 				C90E360F23EA3AD700B2EBE2 /* Frameworks */,
 				C90E361023EA3AD700B2EBE2 /* Resources */,
-				9B07DA91F75F633D2E3C77CB /* [CP] Embed Pods Frameworks */,
+				249D2EEBE02F5CC1965659F8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -182,7 +182,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		09488E8949FE072B767C2EF3 /* [CP] Check Pods Manifest.lock */ = {
+		249D2EEBE02F5CC1965659F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ACNH App/Pods-ACNH App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ACNH App/Pods-ACNH App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ACNH App/Pods-ACNH App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CCF91CEFA0994807860BB0F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -202,23 +219,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9B07DA91F75F633D2E3C77CB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ACNH App/Pods-ACNH App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ACNH App/Pods-ACNH App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ACNH App/Pods-ACNH App-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -378,7 +378,7 @@
 		};
 		C90E362723EA3ADA00B2EBE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FBDF0A602663933F366449C2 /* Pods-ACNH App.debug.xcconfig */;
+			baseConfigurationReference = 45374AC4C329B3CE0B2B5585 /* Pods-ACNH App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -397,7 +397,7 @@
 		};
 		C90E362823EA3ADA00B2EBE2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E4453E51220F7841FF155CE /* Pods-ACNH App.release.xcconfig */;
+			baseConfigurationReference = 57E570E27F78095C5DEB6AD4 /* Pods-ACNH App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

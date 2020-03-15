@@ -12,7 +12,7 @@
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="dSZ-oN-Y1i" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qy2-KN-ed5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AM2-UQ-sWC">
@@ -332,9 +332,6 @@
                                 <state key="normal" title="Bugs and Insects">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="zo2-f8-jeA" kind="show" id="PG7-Fb-Uh5"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4J-n7-wGB">
                                 <rect key="frame" x="20" y="458" width="374" height="69"/>
@@ -344,9 +341,6 @@
                                 <state key="normal" title="Fish and Sea Creatures">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="cgX-7k-riG" kind="show" id="g9W-ak-JAI"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AW6-zm-P2I">
                                 <rect key="frame" x="20" y="551" width="374" height="69"/>
@@ -410,7 +404,7 @@
                         <viewLayoutGuide key="safeArea" id="cPu-ZS-UvT"/>
                     </view>
                     <navigationItem key="navigationItem" title="Today" largeTitleDisplayMode="always" id="tyN-a9-lou">
-                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="LjJ-bh-CrU">
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="LjJ-bh-CrU">
                             <rect key="frame" x="50" y="6" width="297.33333333333331" height="32"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
@@ -431,79 +425,10 @@
             </objects>
             <point key="canvasLocation" x="-442.02898550724643" y="1291.7410714285713"/>
         </scene>
-        <!--Bugs-->
-        <scene sceneID="jNX-32-VEs">
-            <objects>
-                <tableViewController id="zo2-f8-jeA" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="u1R-08-TxL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="TrG-cL-xmY">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TrG-cL-xmY" id="pfu-Os-LUI">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="zo2-f8-jeA" id="jlo-wd-6f2"/>
-                            <outlet property="delegate" destination="zo2-f8-jeA" id="wGi-dJ-eWI"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Bugs" id="1ty-dx-qbl">
-                        <barButtonItem key="rightBarButtonItem" image="wrench.fill" catalog="system" id="J90-4Y-Xyb">
-                            <connections>
-                                <segue destination="dSZ-oN-Y1i" kind="show" id="tR1-ka-XON"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mvU-gE-sVl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="297" y="1292"/>
-        </scene>
-        <!--Fish-->
-        <scene sceneID="9qk-BA-MVt">
-            <objects>
-                <tableViewController id="cgX-7k-riG" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="zRF-9q-Fli">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="MTD-gt-vcT">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MTD-gt-vcT" id="7ud-En-aVD">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="cgX-7k-riG" id="OMr-fX-vLL"/>
-                            <outlet property="delegate" destination="cgX-7k-riG" id="S3M-yQ-an8"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Fish" id="NEB-fb-u6e">
-                        <barButtonItem key="rightBarButtonItem" image="wrench.fill" catalog="system" id="ZZ6-xN-O5R">
-                            <connections>
-                                <segue destination="dSZ-oN-Y1i" kind="show" id="9AO-92-LYe"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3ik-un-iX5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1017" y="1292"/>
-        </scene>
         <!--Deep Sea-->
         <scene sceneID="8SM-QK-i5z">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HOa-Da-uNw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController id="C1C-Tx-StJ" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NvS-Lx-Iyj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -532,9 +457,8 @@
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HOa-Da-uNw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1745" y="1292"/>
+            <point key="canvasLocation" x="296" y="1290"/>
         </scene>
         <!--Collections-->
         <scene sceneID="xMw-gW-vGv">
@@ -838,7 +762,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="l4Q-Up-4xY"/>
+        <segue reference="1DO-w2-anF"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="5464e620cf29c2dd95a4f315b6379472" width="400" height="400"/>
