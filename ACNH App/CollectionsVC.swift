@@ -17,7 +17,7 @@ class CollectionsVC: UIViewController, UITableViewDataSource, UITableViewDelegat
         CollectionType(name: "Gyroids", desc: "You have 0/150 collected", imgPath: "GyroidIcon"),
         CollectionType(name: "Furniture", desc: "You have 0/500 collected", imgPath: "LeafIcon"),
         CollectionType(name: "Flowers", desc: "You have 0/50 collected", imgPath: "FlowerIcon"),
-        CollectionType(name: "Fruit", desc: "You have 0/10 collected", imgPath: "FruitIcon"),
+        CollectionType(name: "Fruit", desc: "You have 0/10 collected", imgPath: "Apple"),
         CollectionType(name: "Tools", desc: "You have 0/20 collected", imgPath: "ToolIcon"),
     ]
     
@@ -47,9 +47,25 @@ class CollectionsVC: UIViewController, UITableViewDataSource, UITableViewDelegat
         return cell
     }
     
+    var collectionName = ""
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let index = indexPath.row
+        collectionName = (collections[index] as CollectionType).name
+        performSegue(withIdentifier: "listSegue", sender: self)
+//        print("Hello")
+//        let vc = CollectionList()
+//        vc.changeLabel(String: "Test")
+    }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.destination is CollectionList
+        {
+            let vc = segue.destination as? CollectionList
+            vc?.titleText = collectionName
+        }
+    }
     /*
     // MARK: - Navigation
 

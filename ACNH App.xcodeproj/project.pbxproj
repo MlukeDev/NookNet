@@ -7,26 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		64FCA1B4220913EAD6EDE2BA /* Pods_ACNH_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33BF2177BD1EDC6CABFB6B8C /* Pods_ACNH_App.framework */; };
+		6A6C1460A0EE7C852DD29611 /* Pods_ACNH_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23712E346E900261E3C57F07 /* Pods_ACNH_App.framework */; };
 		C90E361623EA3AD700B2EBE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90E361523EA3AD700B2EBE2 /* AppDelegate.swift */; };
 		C90E361823EA3AD700B2EBE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90E361723EA3AD700B2EBE2 /* SceneDelegate.swift */; };
 		C90E361D23EA3AD700B2EBE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90E361B23EA3AD700B2EBE2 /* Main.storyboard */; };
 		C90E361F23EA3ADA00B2EBE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C90E361E23EA3ADA00B2EBE2 /* Assets.xcassets */; };
 		C90E362223EA3ADA00B2EBE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90E362023EA3ADA00B2EBE2 /* LaunchScreen.storyboard */; };
+		C923E915241EDAE700B6AC05 /* Collectible Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C923E914241EDAE700B6AC05 /* Collectible Cell.swift */; };
+		C937B0E5241DB7AF0068ACCD /* CollectionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C937B0E4241DB7AF0068ACCD /* CollectionList.swift */; };
 		C93D4D8E2400FE4A006809CD /* CollectionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93D4D8D2400FE4A006809CD /* CollectionsVC.swift */; };
 		C93D4D902400FF02006809CD /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93D4D8F2400FF02006809CD /* CollectionCell.swift */; };
 		C95E420223EFC69100B98AF8 /* IslandNameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95E420123EFC69100B98AF8 /* IslandNameVC.swift */; };
 		C96D332223EE23180084ADA0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C96D332123EE23180084ADA0 /* GoogleService-Info.plist */; };
 		C983C84823EA819D00B30483 /* todayPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983C84723EA819D00B30483 /* todayPage.swift */; };
 		C983C84C23EA830D00B30483 /* eventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983C84B23EA830D00B30483 /* eventCell.swift */; };
+		C9BDFCCA24209386005151A6 /* VillagersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BDFCC924209386005151A6 /* VillagersVC.swift */; };
+		C9BDFCCC242093F6005151A6 /* villagerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BDFCCB242093F6005151A6 /* villagerCell.swift */; };
+		C9DCC68F24215458005EE986 /* VillagerInfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DCC68E24215458005EE986 /* VillagerInfoPage.swift */; };
+		C9E61C072421ECCD000060C5 /* VillagerInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E61C062421ECCD000060C5 /* VillagerInfoCell.swift */; };
 		C9FDE13A23EF577700C9FEB4 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FDE13923EF577700C9FEB4 /* Event.swift */; };
+		C9FE674A241F082100E41C55 /* Encyclopedia Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FE6749241F082100E41C55 /* Encyclopedia Cell.swift */; };
+		C9FE674C241F086A00E41C55 /* EncyclopediaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FE674B241F086A00E41C55 /* EncyclopediaVC.swift */; };
+		C9FE674E241F563E00E41C55 /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FE674D241F563E00E41C55 /* InfoVC.swift */; };
+		C9FE6750241F574700E41C55 /* infoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FE674F241F574700E41C55 /* infoCell.swift */; };
 		C9FFBED82401D7920045B87E /* CollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FFBED72401D7920045B87E /* CollectionType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		33BF2177BD1EDC6CABFB6B8C /* Pods_ACNH_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACNH_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		45374AC4C329B3CE0B2B5585 /* Pods-ACNH App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACNH App.debug.xcconfig"; path = "Target Support Files/Pods-ACNH App/Pods-ACNH App.debug.xcconfig"; sourceTree = "<group>"; };
-		57E570E27F78095C5DEB6AD4 /* Pods-ACNH App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACNH App.release.xcconfig"; path = "Target Support Files/Pods-ACNH App/Pods-ACNH App.release.xcconfig"; sourceTree = "<group>"; };
+		23712E346E900261E3C57F07 /* Pods_ACNH_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACNH_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		742D34792DCAE347748FD398 /* Pods-ACNH App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACNH App.release.xcconfig"; path = "Target Support Files/Pods-ACNH App/Pods-ACNH App.release.xcconfig"; sourceTree = "<group>"; };
+		8E778C160BBBC28568A54E7E /* Pods-ACNH App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACNH App.debug.xcconfig"; path = "Target Support Files/Pods-ACNH App/Pods-ACNH App.debug.xcconfig"; sourceTree = "<group>"; };
 		C90E361223EA3AD700B2EBE2 /* NookNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NookNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90E361523EA3AD700B2EBE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C90E361723EA3AD700B2EBE2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,13 +44,23 @@
 		C90E361E23EA3ADA00B2EBE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C90E362123EA3ADA00B2EBE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C90E362323EA3ADA00B2EBE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C923E914241EDAE700B6AC05 /* Collectible Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collectible Cell.swift"; sourceTree = "<group>"; };
+		C937B0E4241DB7AF0068ACCD /* CollectionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionList.swift; sourceTree = "<group>"; };
 		C93D4D8D2400FE4A006809CD /* CollectionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsVC.swift; sourceTree = "<group>"; };
 		C93D4D8F2400FF02006809CD /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
 		C95E420123EFC69100B98AF8 /* IslandNameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandNameVC.swift; sourceTree = "<group>"; };
 		C96D332123EE23180084ADA0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C983C84723EA819D00B30483 /* todayPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todayPage.swift; sourceTree = "<group>"; };
 		C983C84B23EA830D00B30483 /* eventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventCell.swift; sourceTree = "<group>"; };
+		C9BDFCC924209386005151A6 /* VillagersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillagersVC.swift; sourceTree = "<group>"; };
+		C9BDFCCB242093F6005151A6 /* villagerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = villagerCell.swift; sourceTree = "<group>"; };
+		C9DCC68E24215458005EE986 /* VillagerInfoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillagerInfoPage.swift; sourceTree = "<group>"; };
+		C9E61C062421ECCD000060C5 /* VillagerInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillagerInfoCell.swift; sourceTree = "<group>"; };
 		C9FDE13923EF577700C9FEB4 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		C9FE6749241F082100E41C55 /* Encyclopedia Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encyclopedia Cell.swift"; sourceTree = "<group>"; };
+		C9FE674B241F086A00E41C55 /* EncyclopediaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncyclopediaVC.swift; sourceTree = "<group>"; };
+		C9FE674D241F563E00E41C55 /* InfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
+		C9FE674F241F574700E41C55 /* infoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoCell.swift; sourceTree = "<group>"; };
 		C9FFBED72401D7920045B87E /* CollectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,18 +69,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64FCA1B4220913EAD6EDE2BA /* Pods_ACNH_App.framework in Frameworks */,
+				6A6C1460A0EE7C852DD29611 /* Pods_ACNH_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CF1D3A7C0401A92053930C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23712E346E900261E3C57F07 /* Pods_ACNH_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		678ABC66F35BDE25C4339458 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				45374AC4C329B3CE0B2B5585 /* Pods-ACNH App.debug.xcconfig */,
-				57E570E27F78095C5DEB6AD4 /* Pods-ACNH App.release.xcconfig */,
+				8E778C160BBBC28568A54E7E /* Pods-ACNH App.debug.xcconfig */,
+				742D34792DCAE347748FD398 /* Pods-ACNH App.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -71,7 +99,7 @@
 				C90E361423EA3AD700B2EBE2 /* ACNH App */,
 				C90E361323EA3AD700B2EBE2 /* Products */,
 				678ABC66F35BDE25C4339458 /* Pods */,
-				E1732E95FCB2BE1207F61251 /* Frameworks */,
+				3CF1D3A7C0401A92053930C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,27 +117,29 @@
 				C90E361523EA3AD700B2EBE2 /* AppDelegate.swift */,
 				C90E361723EA3AD700B2EBE2 /* SceneDelegate.swift */,
 				C90E361B23EA3AD700B2EBE2 /* Main.storyboard */,
-				C93D4D8D2400FE4A006809CD /* CollectionsVC.swift */,
-				C93D4D8F2400FF02006809CD /* CollectionCell.swift */,
 				C95E420123EFC69100B98AF8 /* IslandNameVC.swift */,
 				C983C84723EA819D00B30483 /* todayPage.swift */,
-				C9FDE13923EF577700C9FEB4 /* Event.swift */,
-				C9FFBED72401D7920045B87E /* CollectionType.swift */,
 				C983C84B23EA830D00B30483 /* eventCell.swift */,
+				C9FDE13923EF577700C9FEB4 /* Event.swift */,
+				C9FE674B241F086A00E41C55 /* EncyclopediaVC.swift */,
+				C9FE6749241F082100E41C55 /* Encyclopedia Cell.swift */,
+				C93D4D8D2400FE4A006809CD /* CollectionsVC.swift */,
+				C93D4D8F2400FF02006809CD /* CollectionCell.swift */,
+				C937B0E4241DB7AF0068ACCD /* CollectionList.swift */,
+				C9FFBED72401D7920045B87E /* CollectionType.swift */,
+				C923E914241EDAE700B6AC05 /* Collectible Cell.swift */,
+				C9FE674D241F563E00E41C55 /* InfoVC.swift */,
+				C9FE674F241F574700E41C55 /* infoCell.swift */,
+				C9BDFCC924209386005151A6 /* VillagersVC.swift */,
+				C9BDFCCB242093F6005151A6 /* villagerCell.swift */,
+				C9DCC68E24215458005EE986 /* VillagerInfoPage.swift */,
+				C9E61C062421ECCD000060C5 /* VillagerInfoCell.swift */,
 				C90E361E23EA3ADA00B2EBE2 /* Assets.xcassets */,
 				C90E362023EA3ADA00B2EBE2 /* LaunchScreen.storyboard */,
 				C90E362323EA3ADA00B2EBE2 /* Info.plist */,
 				C96D332123EE23180084ADA0 /* GoogleService-Info.plist */,
 			);
 			path = "ACNH App";
-			sourceTree = "<group>";
-		};
-		E1732E95FCB2BE1207F61251 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				33BF2177BD1EDC6CABFB6B8C /* Pods_ACNH_App.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,11 +149,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C90E362623EA3ADA00B2EBE2 /* Build configuration list for PBXNativeTarget "ACNH App" */;
 			buildPhases = (
-				9CCF91CEFA0994807860BB0F /* [CP] Check Pods Manifest.lock */,
+				18056B28B587768C0B81E564 /* [CP] Check Pods Manifest.lock */,
 				C90E360E23EA3AD700B2EBE2 /* Sources */,
 				C90E360F23EA3AD700B2EBE2 /* Frameworks */,
 				C90E361023EA3AD700B2EBE2 /* Resources */,
-				249D2EEBE02F5CC1965659F8 /* [CP] Embed Pods Frameworks */,
+				83FEC4079B4AEA4455BF2F63 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -182,24 +212,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		249D2EEBE02F5CC1965659F8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ACNH App/Pods-ACNH App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ACNH App/Pods-ACNH App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ACNH App/Pods-ACNH App-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9CCF91CEFA0994807860BB0F /* [CP] Check Pods Manifest.lock */ = {
+		18056B28B587768C0B81E564 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -221,6 +234,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		83FEC4079B4AEA4455BF2F63 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ACNH App/Pods-ACNH App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ACNH App/Pods-ACNH App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ACNH App/Pods-ACNH App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -230,13 +260,23 @@
 			files = (
 				C983C84823EA819D00B30483 /* todayPage.swift in Sources */,
 				C983C84C23EA830D00B30483 /* eventCell.swift in Sources */,
+				C9DCC68F24215458005EE986 /* VillagerInfoPage.swift in Sources */,
 				C90E361623EA3AD700B2EBE2 /* AppDelegate.swift in Sources */,
 				C93D4D902400FF02006809CD /* CollectionCell.swift in Sources */,
+				C9FE6750241F574700E41C55 /* infoCell.swift in Sources */,
+				C9FE674E241F563E00E41C55 /* InfoVC.swift in Sources */,
+				C9E61C072421ECCD000060C5 /* VillagerInfoCell.swift in Sources */,
 				C9FDE13A23EF577700C9FEB4 /* Event.swift in Sources */,
 				C9FFBED82401D7920045B87E /* CollectionType.swift in Sources */,
 				C95E420223EFC69100B98AF8 /* IslandNameVC.swift in Sources */,
+				C9FE674C241F086A00E41C55 /* EncyclopediaVC.swift in Sources */,
 				C93D4D8E2400FE4A006809CD /* CollectionsVC.swift in Sources */,
+				C923E915241EDAE700B6AC05 /* Collectible Cell.swift in Sources */,
+				C9BDFCCC242093F6005151A6 /* villagerCell.swift in Sources */,
 				C90E361823EA3AD700B2EBE2 /* SceneDelegate.swift in Sources */,
+				C9FE674A241F082100E41C55 /* Encyclopedia Cell.swift in Sources */,
+				C9BDFCCA24209386005151A6 /* VillagersVC.swift in Sources */,
+				C937B0E5241DB7AF0068ACCD /* CollectionList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +418,7 @@
 		};
 		C90E362723EA3ADA00B2EBE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45374AC4C329B3CE0B2B5585 /* Pods-ACNH App.debug.xcconfig */;
+			baseConfigurationReference = 8E778C160BBBC28568A54E7E /* Pods-ACNH App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -397,7 +437,7 @@
 		};
 		C90E362823EA3ADA00B2EBE2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57E570E27F78095C5DEB6AD4 /* Pods-ACNH App.release.xcconfig */;
+			baseConfigurationReference = 742D34792DCAE347748FD398 /* Pods-ACNH App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -42,6 +42,13 @@ class eventCell: UITableViewCell {
         eventDescription.text = event.desc
         let url : URL = URL(string: event.imgURL) ?? URL(string: "https://firebasestorage.googleapis.com/v0/b/acnh-guide.appspot.com/o/Wallpapers%2Fk2-_cf527332-1589-4381-9765-f62cec08a67d.v1.jpg?alt=media&token=8d070fe4-d238-4bf5-a9d2-e9e7277c5a83")!
         eventImage.sd_setImage(with: url)
+        
+        if let roundedHeadlineDescriptor = UIFontDescriptor.preferredFontDescriptor(withTextStyle: .headline).withDesign(.rounded) {
+            // Create the rounded font
+            let roundedFont = UIFont(descriptor: roundedHeadlineDescriptor, size: 30)
+            eventTitle.font = roundedFont
+        }
+        
     }
 
 }

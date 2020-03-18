@@ -6,7 +6,6 @@ target 'ACNH App' do
   use_frameworks!
 
   # Pods for ACNH App
-
-
 pod 'SDWebImage', '~> 5.0'
+
 end
