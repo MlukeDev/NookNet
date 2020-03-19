@@ -32,6 +32,7 @@ class villagerCell: UITableViewCell {
     func set(villagerName:String)
     {
         villagerLabel.text = villagerName
+        villagerImage.image = UIImage(named: villagerName) ?? UIImage(named: "Placeholder?")
         
     }
     

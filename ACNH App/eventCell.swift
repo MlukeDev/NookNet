@@ -22,7 +22,7 @@ class eventCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        cellView.layer.cornerRadius = 15
+        cellView.layer.cornerRadius = 20
 
         
         // Initialization code

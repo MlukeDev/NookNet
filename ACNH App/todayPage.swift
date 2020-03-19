@@ -11,7 +11,7 @@ import UIKit
 
 class todayPage: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var events = [Event(name: "Test One", desc: "Test Description", imgURL: "https://github.com/MlukeDev/NookNet/blob/master/ACNH%20App/Assets.xcassets/Placeholder.imageset/Animal_Crossing_New_Horizons_-_Screenshot_06.png?raw=true", dayStart: 10, monthStart: 10, year: 2020),Event(name: "Test Two", desc: "Test Description again", imgURL: "https://github.com/MlukeDev/NookNet/blob/master/ACNH%20App/Assets.xcassets/Holidays/Toy%20Day.imageset/ToyDay-1.png?raw=true", dayStart: 20, monthStart: 3, year: 2020)]
+    var events = [Event(name: "Release Day!", desc: "Get ready to enjoy the island life!", imgURL: "https://cdn.gamer-network.net/2020/usgamer/Animal-Crossing-New-Horizons_screen_15.jpg/EG11/thumbnail/1920x1080/format/jpg/quality/65/animal-crossing-new-horizons-new-details-pax-east.jpg", dayStart: 20, monthStart: 3, year: 2020),Event(name: "Test Two", desc: "Test Description again", imgURL: "https://cdn.mos.cms.futurecdn.net/eeGai2QVBV8GvY7kdaWLfD.jpg", dayStart: 20, monthStart: 3, year: 2020)]
     var dates = [Date]()
     let date = Date()
     
@@ -22,6 +22,8 @@ class todayPage: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var navBar: UINavigationItem!
     @IBOutlet weak var eventTableView: UITableView!
+    
+    
     
     override func viewDidLoad()
     {
@@ -36,10 +38,18 @@ class todayPage: UIViewController, UITableViewDataSource, UITableViewDelegate {
         //Sends query to Firebase and populates tableview
         let dateFormat = DateFormatter()
         dateFormat.dateFormat = "MM-dd"
-        let currentDate = dateFormat.string(from: date)
-        let currendYear = Calendar.current.component(.year, from: date)
+//        let currentDate = dateFormat.string(from: date)
+//        let currendYear = Calendar.current.component(.year, from: date)
 //        query(startDate: currentDate, year: currendYear)
 //        query(startDate: "01-01", year: (currendYear + 1))
+        
+        let appearance = UINavigationBarAppearance(idiom: .phone)
+        appearance.largeTitleTextAttributes = [.foregroundColor: #colorLiteral(red: 0.4143708882, green: 0.3625313006, blue: 0.298405092, alpha: 1)]
+        appearance.titleTextAttributes = [.foregroundColor: #colorLiteral(red: 0.4143708882, green: 0.3625313006, blue: 0.298405092, alpha: 1)]
+        appearance.backgroundColor = #colorLiteral(red: 0.8785257936, green: 0.8486937881, blue: 0.791471839, alpha: 1)
+        navigationItem.standardAppearance = appearance
+        navigationItem.scrollEdgeAppearance = appearance
+        
         
         eventTableView.dataSource = self
         eventTableView.delegate = self
@@ -88,42 +98,4 @@ class todayPage: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     
-    //Sends query to Firebase
-    //    func query(startDate: String, year: Int)
-    //    {
-    //    let eventsRef = Database.database().reference().child("1uyNqbIpwZ_kQcHUY2eP7W8HaxupiRh_VJy7SWkSBmbc").child("events_en_na")
-    //
-    //    let queryRef = eventsRef.queryOrdered(byChild: "dateString")
-    //        .queryStarting(atValue: startDate)
-    //        .queryEnding(atValue: "12-31")
-    //
-    //    queryRef.observe(.value, with: { snapshot in
-    //        for child in snapshot.children {
-    //            if let childSnapshot = child as? DataSnapshot,
-    //                let dict = childSnapshot.value as? [String:Any],
-    //                let name = dict["name"] as? String,
-    //                let desc = dict["desc"] as? String,
-    //                let imgURL = dict["imgURL"] as? String,
-    //                let dayStart = dict["dayStart"] as? Int,
-    //                let monthStart = dict["monthStart"] as? Int
-    //                {
-    //                    let event = Event(name: name, desc: desc, imgURL: imgURL, dayStart: dayStart, monthStart: monthStart, year: year)
-    //
-    //                    self.events.append(event)
-    //                }
-    //            }
-    //        self.eventTableView.reloadData()
-    //        })
-    //    }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

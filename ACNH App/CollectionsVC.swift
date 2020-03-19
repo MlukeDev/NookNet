@@ -12,13 +12,17 @@ class CollectionsVC: UIViewController, UITableViewDataSource, UITableViewDelegat
     
     let collections =
     [
-        CollectionType(name: "Fossils", desc: "You have 0/100 collected", imgPath: "FossilIcon"),
-        CollectionType(name: "Artwork", desc: "You have 0/50 collected", imgPath: "ArtIcon"),
-        CollectionType(name: "Gyroids", desc: "You have 0/150 collected", imgPath: "GyroidIcon"),
-        CollectionType(name: "Furniture", desc: "You have 0/500 collected", imgPath: "LeafIcon"),
-        CollectionType(name: "Flowers", desc: "You have 0/50 collected", imgPath: "FlowerIcon"),
-        CollectionType(name: "Fruit", desc: "You have 0/10 collected", imgPath: "Apple"),
-        CollectionType(name: "Tools", desc: "You have 0/20 collected", imgPath: "ToolIcon"),
+        CollectionType(name: "Fossils", desc: "You have 0/0 collected", imgPath: "Placeholder?"),
+        CollectionType(name: "Artwork", desc: "You have 0/0 collected", imgPath: "Placeholder?"),
+        CollectionType(name: "Gyroids", desc: "You have 0/0 collected", imgPath: "Placeholder?"),
+        CollectionType(name: "Furniture", desc: "You have 0/0 collected", imgPath: "Placeholder?"),
+        CollectionType(name: "Flowers", desc: "You have 0/0 collected", imgPath: "Placeholder?"),
+        CollectionType(name: "Fruit", desc: "You have 0/0 collected", imgPath: "Placeholder?"),
+        CollectionType(name: "Tools", desc: "You have 0/0 collected", imgPath: "Placeholder?"),
+        CollectionType(name: "Emotes", desc: "You have 0/0 collected", imgPath: "Placeholder?"),
+        CollectionType(name: "Music", desc: "You have 0/0 collected", imgPath: "Placeholder?"),
+        CollectionType(name: "DIY Recipes", desc: "You have 0/0 collected", imgPath: "Placeholder?"),
+        CollectionType(name: "Other", desc: "You have 0/0 collected", imgPath: "Placeholder?"),
     ]
     
     @IBOutlet weak var tableView: UITableView!
@@ -27,7 +31,12 @@ class CollectionsVC: UIViewController, UITableViewDataSource, UITableViewDelegat
         super.viewDidLoad()
 
         
-           
+        let appearance = UINavigationBarAppearance(idiom: .phone)
+               appearance.largeTitleTextAttributes = [.foregroundColor: #colorLiteral(red: 0.4143708882, green: 0.3625313006, blue: 0.298405092, alpha: 1)]
+               appearance.titleTextAttributes = [.foregroundColor: #colorLiteral(red: 0.4143708882, green: 0.3625313006, blue: 0.298405092, alpha: 1)]
+               appearance.backgroundColor = #colorLiteral(red: 0.8785257936, green: 0.8486937881, blue: 0.791471839, alpha: 1)
+               navigationItem.standardAppearance = appearance
+               navigationItem.scrollEdgeAppearance = appearance
        
         
         tableView.dataSource = self

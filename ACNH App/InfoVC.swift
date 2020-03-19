@@ -32,6 +32,13 @@ class InfoVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         collectedView.layer.cornerRadius = 15
         tableView.layer.cornerRadius = 15
         
+        
+        let appearance = UINavigationBarAppearance(idiom: .phone)
+               appearance.largeTitleTextAttributes = [.foregroundColor: #colorLiteral(red: 0.4143708882, green: 0.3625313006, blue: 0.298405092, alpha: 1)]
+               appearance.titleTextAttributes = [.foregroundColor: #colorLiteral(red: 0.4143708882, green: 0.3625313006, blue: 0.298405092, alpha: 1)]
+               appearance.backgroundColor = #colorLiteral(red: 0.8785257936, green: 0.8486937881, blue: 0.791471839, alpha: 1)
+               navigationItem.standardAppearance = appearance
+               navigationItem.scrollEdgeAppearance = appearance
         // Do any additional setup after loading the view.
     }
     

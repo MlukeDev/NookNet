@@ -773,7 +773,7 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="infoCell" rowHeight="73" translatesAutoresizingMaskIntoConstraints="NO" id="Mcz-TE-sqp" customClass="infoCell" customModule="NookNet" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="infoCell" rowHeight="73" translatesAutoresizingMaskIntoConstraints="NO" id="Mcz-TE-sqp" customClass="infoCell" customModule="NookNet" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="203" width="384" height="73"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mcz-TE-sqp" id="JXV-DG-6P9">
@@ -1146,13 +1146,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1xC-Ya-cia"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Villagers" id="5PU-Ro-9ei">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="7Fw-vk-1Jd">
-                            <connections>
-                                <action selector="buttonItemThingy:" destination="bX6-8s-Vhh" id="iu6-eX-vK1"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Villagers" id="5PU-Ro-9ei"/>
                     <connections>
                         <outlet property="tableView" destination="JaU-IX-pY8" id="Nbe-Jg-0dE"/>
                         <segue destination="r1H-xp-ff2" kind="show" identifier="villagerInfo" id="WyL-fu-1I5"/>
@@ -1347,8 +1341,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="kmm-hc-cLy"/>
-        <segue reference="ywp-RP-DK6"/>
+        <segue reference="tPe-W9-mw7"/>
+        <segue reference="n8q-ad-bsj"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="CatGlyph" width="23.333333969116211" height="23.333333969116211"/>

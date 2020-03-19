@@ -20,9 +20,9 @@ class EncyclopediaVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     let collections =
     [
-        CollectionType(name: "Fish", desc: "You have 0/100 collected", imgPath: "FossilIcon"),
-        CollectionType(name: "Bugs", desc: "You have 0/50 collected", imgPath: "ArtIcon"),
-        CollectionType(name: "All Creatures", desc: "You have 0/150 collected", imgPath: "GyroidIcon")
+        CollectionType(name: "Fish", desc: "You have 0/0 collected", imgPath: "Placeholder?"),
+        CollectionType(name: "Bugs", desc: "You have 0/0 collected", imgPath: "Placeholder?"),
+        CollectionType(name: "All Creatures", desc: "You have 0/0 collected", imgPath: "Placeholder?")
     ]
     
     override func viewDidLoad() {
@@ -44,6 +44,13 @@ class EncyclopediaVC: UIViewController, UITableViewDelegate, UITableViewDataSour
                         fishButton.layer.cornerRadius = 10
                         bugsButton.layer.cornerRadius = 10
        
+        let appearance = UINavigationBarAppearance(idiom: .phone)
+               appearance.largeTitleTextAttributes = [.foregroundColor: #colorLiteral(red: 0.4143708882, green: 0.3625313006, blue: 0.298405092, alpha: 1)]
+               appearance.titleTextAttributes = [.foregroundColor: #colorLiteral(red: 0.4143708882, green: 0.3625313006, blue: 0.298405092, alpha: 1)]
+               appearance.backgroundColor = #colorLiteral(red: 0.8785257936, green: 0.8486937881, blue: 0.791471839, alpha: 1)
+               navigationItem.standardAppearance = appearance
+               navigationItem.scrollEdgeAppearance = appearance
+        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

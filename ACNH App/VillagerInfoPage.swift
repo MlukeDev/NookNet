@@ -10,17 +10,12 @@ import UIKit
 
 struct Villager {
     var name: String
-    var birthday: birthday
+    var birthday: String
     var favoritStyle: String
     var dislikedStyle: String
     var favoritColor: String
     var species: String
     var personality: String
-
-        struct birthday: Decodable{
-            var day: Int
-            var month: Int
-    }
 }
 
 class VillagerInfoPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -37,9 +32,7 @@ class VillagerInfoPage: UIViewController, UITableViewDelegate, UITableViewDataSo
    
     
     var villager = Villager(name: "",
-                            birthday: Villager.birthday(
-                                day: 0,
-                                month: 0),
+                            birthday: "",
                             favoritStyle: "",
                             dislikedStyle: "",
                             favoritColor: "",
@@ -55,8 +48,9 @@ class VillagerInfoPage: UIViewController, UITableViewDelegate, UITableViewDataSo
         tableView.delegate = self
 
         nameLabel.text = villager.name
+        villagerImage.image = UIImage(named: villager.name) ?? UIImage(named: "Placeholder?")
         
-        birthdayString = "\(villager.birthday.month) / \(villager.birthday.day)"
+        
         
         villagerImage?.layer.cornerRadius = 15
         nameView.layer.cornerRadius = 15
@@ -64,7 +58,12 @@ class VillagerInfoPage: UIViewController, UITableViewDelegate, UITableViewDataSo
         infoView.layer.cornerRadius = 15
         tableView.layer.cornerRadius = 15
         
-        // Do any additional setup after loading the view.
+         let appearance = UINavigationBarAppearance(idiom: .phone)
+               appearance.largeTitleTextAttributes = [.foregroundColor: #colorLiteral(red: 0.4143708882, green: 0.3625313006, blue: 0.298405092, alpha: 1)]
+               appearance.titleTextAttributes = [.foregroundColor: #colorLiteral(red: 0.4143708882, green: 0.3625313006, blue: 0.298405092, alpha: 1)]
+               appearance.backgroundColor = #colorLiteral(red: 0.8785257936, green: 0.8486937881, blue: 0.791471839, alpha: 1)
+               navigationItem.standardAppearance = appearance
+               navigationItem.scrollEdgeAppearance = appearance
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -77,7 +76,7 @@ class VillagerInfoPage: UIViewController, UITableViewDelegate, UITableViewDataSo
         
         if indexPath.row == 0
         {
-            cell.set(labelText: "Birthday", labelSubText: birthdayString)
+            cell.set(labelText: "Birthday", labelSubText: villager.birthday)
             return cell
         }
         else if indexPath.row == 1
