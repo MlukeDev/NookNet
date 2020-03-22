@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import AuthenticationServices
 
 class todayPage: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -20,6 +20,8 @@ class todayPage: UIViewController, UITableViewDataSource, UITableViewDelegate {
     let defaults = UserDefaults.standard
     let timeInterval = NSDate().timeIntervalSince1970
     
+    var userIdentifier = ""
+    
     @IBOutlet weak var navBar: UINavigationItem!
     @IBOutlet weak var eventTableView: UITableView!
     
@@ -28,6 +30,9 @@ class todayPage: UIViewController, UITableViewDataSource, UITableViewDelegate {
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        
+        
         //Grabs default values
         isNotFirstTime = defaults.bool(forKey: "isNotFirstTime")
       //  islandNameText.text = defaults.string(forKey: "islandName")
@@ -49,6 +54,7 @@ class todayPage: UIViewController, UITableViewDataSource, UITableViewDelegate {
         appearance.backgroundColor = #colorLiteral(red: 0.8785257936, green: 0.8486937881, blue: 0.791471839, alpha: 1)
         navigationItem.standardAppearance = appearance
         navigationItem.scrollEdgeAppearance = appearance
+        
         
         
         eventTableView.dataSource = self

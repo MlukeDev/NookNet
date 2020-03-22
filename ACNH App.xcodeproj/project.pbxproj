@@ -19,6 +19,8 @@
 		C93D4D902400FF02006809CD /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93D4D8F2400FF02006809CD /* CollectionCell.swift */; };
 		C95E420223EFC69100B98AF8 /* IslandNameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95E420123EFC69100B98AF8 /* IslandNameVC.swift */; };
 		C96D332223EE23180084ADA0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C96D332123EE23180084ADA0 /* GoogleService-Info.plist */; };
+		C9793F94242722D70029C172 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9793F93242722D70029C172 /* LogInViewController.swift */; };
+		C9793F96242737D40029C172 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9793F95242737D40029C172 /* InitialViewController.swift */; };
 		C983C84823EA819D00B30483 /* todayPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983C84723EA819D00B30483 /* todayPage.swift */; };
 		C983C84C23EA830D00B30483 /* eventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983C84B23EA830D00B30483 /* eventCell.swift */; };
 		C9BDFCCA24209386005151A6 /* VillagersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BDFCC924209386005151A6 /* VillagersVC.swift */; };
@@ -50,8 +52,11 @@
 		C93D4D8F2400FF02006809CD /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
 		C95E420123EFC69100B98AF8 /* IslandNameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandNameVC.swift; sourceTree = "<group>"; };
 		C96D332123EE23180084ADA0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C9793F93242722D70029C172 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		C9793F95242737D40029C172 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		C983C84723EA819D00B30483 /* todayPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todayPage.swift; sourceTree = "<group>"; };
 		C983C84B23EA830D00B30483 /* eventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventCell.swift; sourceTree = "<group>"; };
+		C99007592427143A008C1EC7 /* NookNet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NookNet.entitlements; sourceTree = "<group>"; };
 		C9BDFCC924209386005151A6 /* VillagersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillagersVC.swift; sourceTree = "<group>"; };
 		C9BDFCCB242093F6005151A6 /* villagerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = villagerCell.swift; sourceTree = "<group>"; };
 		C9DCC68E24215458005EE986 /* VillagerInfoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillagerInfoPage.swift; sourceTree = "<group>"; };
@@ -114,9 +119,12 @@
 		C90E361423EA3AD700B2EBE2 /* ACNH App */ = {
 			isa = PBXGroup;
 			children = (
+				C99007592427143A008C1EC7 /* NookNet.entitlements */,
 				C90E361523EA3AD700B2EBE2 /* AppDelegate.swift */,
 				C90E361723EA3AD700B2EBE2 /* SceneDelegate.swift */,
 				C90E361B23EA3AD700B2EBE2 /* Main.storyboard */,
+				C9793F95242737D40029C172 /* InitialViewController.swift */,
+				C9793F93242722D70029C172 /* LogInViewController.swift */,
 				C95E420123EFC69100B98AF8 /* IslandNameVC.swift */,
 				C983C84723EA819D00B30483 /* todayPage.swift */,
 				C983C84B23EA830D00B30483 /* eventCell.swift */,
@@ -266,12 +274,14 @@
 				C9FE6750241F574700E41C55 /* infoCell.swift in Sources */,
 				C9FE674E241F563E00E41C55 /* InfoVC.swift in Sources */,
 				C9E61C072421ECCD000060C5 /* VillagerInfoCell.swift in Sources */,
+				C9793F94242722D70029C172 /* LogInViewController.swift in Sources */,
 				C9FDE13A23EF577700C9FEB4 /* Event.swift in Sources */,
 				C9FFBED82401D7920045B87E /* CollectionType.swift in Sources */,
 				C95E420223EFC69100B98AF8 /* IslandNameVC.swift in Sources */,
 				C9FE674C241F086A00E41C55 /* EncyclopediaVC.swift in Sources */,
 				C93D4D8E2400FE4A006809CD /* CollectionsVC.swift in Sources */,
 				C923E915241EDAE700B6AC05 /* Collectible Cell.swift in Sources */,
+				C9793F96242737D40029C172 /* InitialViewController.swift in Sources */,
 				C9BDFCCC242093F6005151A6 /* villagerCell.swift in Sources */,
 				C90E361823EA3AD700B2EBE2 /* SceneDelegate.swift in Sources */,
 				C9FE674A241F082100E41C55 /* Encyclopedia Cell.swift in Sources */,
@@ -421,6 +431,7 @@
 			baseConfigurationReference = 8E778C160BBBC28568A54E7E /* Pods-ACNH App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "ACNH App/NookNet.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N5BBRS4WQK;
 				INFOPLIST_FILE = "ACNH App/Info.plist";
@@ -440,6 +451,7 @@
 			baseConfigurationReference = 742D34792DCAE347748FD398 /* Pods-ACNH App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "ACNH App/NookNet.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N5BBRS4WQK;
 				INFOPLIST_FILE = "ACNH App/Info.plist";

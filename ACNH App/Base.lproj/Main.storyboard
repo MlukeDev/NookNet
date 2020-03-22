@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16085" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="t5M-Jd-Jxl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16085" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NkI-Lw-LCH">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16078.1"/>
@@ -116,7 +116,7 @@
         <!--Home-->
         <scene sceneID="Nns-IO-vJZ">
             <objects>
-                <navigationController id="xwN-LW-hpu" sceneMemberID="viewController">
+                <navigationController interfaceStyle="light" id="xwN-LW-hpu" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house.fill" id="BV1-AL-rpM"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Y7H-0g-hCK">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -141,7 +141,7 @@
         <!--Today in Mattown-->
         <scene sceneID="2F3-HS-ssm">
             <objects>
-                <viewController id="UUe-Vg-Mxk" customClass="todayPage" customModule="NookNet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController definesPresentationContext="YES" modalPresentationStyle="overCurrentContext" id="UUe-Vg-Mxk" customClass="todayPage" customModule="NookNet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lct-Wl-nbX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -276,7 +276,7 @@
         <!--Encyclopedia-->
         <scene sceneID="A6J-cZ-Kb0">
             <objects>
-                <navigationController id="6Lv-qn-Q5i" sceneMemberID="viewController">
+                <navigationController interfaceStyle="light" id="6Lv-qn-Q5i" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Encyclopedia" image="book" catalog="system" selectedImage="book.fill" id="yS9-bl-iYt"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Y9i-RT-GfO">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -481,7 +481,7 @@
         <!--Collections-->
         <scene sceneID="xMw-gW-vGv">
             <objects>
-                <navigationController id="SYb-g5-1bb" sceneMemberID="viewController">
+                <navigationController interfaceStyle="light" id="SYb-g5-1bb" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Collections" image="checkmark.circle" catalog="system" selectedImage="checkmark.circle.fill" id="v3n-WH-jNj"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="OpW-za-gn7">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -773,7 +773,7 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="infoCell" rowHeight="73" translatesAutoresizingMaskIntoConstraints="NO" id="Mcz-TE-sqp" customClass="infoCell" customModule="NookNet" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="infoCell" rowHeight="73" translatesAutoresizingMaskIntoConstraints="NO" id="Mcz-TE-sqp" customClass="infoCell" customModule="NookNet" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="203" width="384" height="73"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mcz-TE-sqp" id="JXV-DG-6P9">
@@ -1003,48 +1003,87 @@
             </objects>
             <point key="canvasLocation" x="-2996" y="2332"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="C9P-Yr-PYo">
+        <!--Initial View Controller-->
+        <scene sceneID="E8v-U9-dSa">
             <objects>
-                <viewController id="9vm-dw-Y9C" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="68c-zR-HXR">
+                <viewController id="NkI-Lw-LCH" customClass="InitialViewController" customModule="NookNet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CT0-vt-QhZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to NookNet!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f41-Fz-hD1">
-                                <rect key="frame" x="0.0" y="94" width="414" height="41"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="34"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="sfi-n4-R1g">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="IEF-jd-0mf"/>
+                    </view>
+                    <connections>
+                        <segue destination="MRR-Yb-ePl" kind="show" identifier="toSignIn" animates="NO" id="oab-1L-pZ3"/>
+                        <segue destination="t5M-Jd-Jxl" kind="show" identifier="toApp" animates="NO" id="vYg-mZ-TQz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AXv-KG-qFX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7506" y="2193"/>
+        </scene>
+        <!--Log In View Controller-->
+        <scene sceneID="aCn-LQ-EwH">
+            <objects>
+                <viewController providesPresentationContextTransitionStyle="YES" modalPresentationStyle="overFullScreen" hidesBottomBarWhenPushed="YES" interfaceStyle="light" id="MRR-Yb-ePl" customClass="LogInViewController" customModule="NookNet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pql-5N-0Ht">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sNw-dF-BP5">
+                                <rect key="frame" x="30" y="712" width="354" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="EQK-rY-ceG"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to NookNet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UzU-vA-8Zi">
+                                <rect key="frame" x="26" y="111" width="362" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To access the NookNet services, you need to create an account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Euk-VO-FKq">
-                                <rect key="frame" x="80" y="165" width="254" height="42.333333333333343"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign in below to access all NookNet services" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKK-9x-8UU">
+                                <rect key="frame" x="53" y="164" width="308" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="f41-Fz-hD1" firstAttribute="leading" secondItem="mdw-f7-nMx" secondAttribute="leading" id="Bya-wn-ksn"/>
-                            <constraint firstItem="Euk-VO-FKq" firstAttribute="top" secondItem="f41-Fz-hD1" secondAttribute="bottom" constant="30" id="M7x-sc-iLU"/>
-                            <constraint firstItem="mdw-f7-nMx" firstAttribute="trailing" secondItem="Euk-VO-FKq" secondAttribute="trailing" constant="80" id="RiI-3P-KKN"/>
-                            <constraint firstItem="mdw-f7-nMx" firstAttribute="trailing" secondItem="f41-Fz-hD1" secondAttribute="trailing" id="SDq-m0-FzY"/>
-                            <constraint firstItem="Euk-VO-FKq" firstAttribute="leading" secondItem="mdw-f7-nMx" secondAttribute="leading" constant="80" id="oYB-Jr-O3y"/>
-                            <constraint firstItem="f41-Fz-hD1" firstAttribute="top" secondItem="mdw-f7-nMx" secondAttribute="top" constant="50" id="vy3-zw-fdW"/>
+                            <constraint firstItem="sNw-dF-BP5" firstAttribute="leading" secondItem="7kD-aY-8c7" secondAttribute="leading" constant="30" id="CTZ-VS-V7i"/>
+                            <constraint firstItem="7kD-aY-8c7" firstAttribute="bottom" secondItem="sNw-dF-BP5" secondAttribute="bottom" constant="100" id="MWM-bw-WjR"/>
+                            <constraint firstItem="7kD-aY-8c7" firstAttribute="trailing" secondItem="sNw-dF-BP5" secondAttribute="trailing" constant="30" id="XAn-TW-Aa5"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="mdw-f7-nMx"/>
+                        <viewLayoutGuide key="safeArea" id="7kD-aY-8c7"/>
                     </view>
+                    <navigationItem key="navigationItem" id="FYt-wG-JHg"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="StackView" destination="sNw-dF-BP5" id="9D4-3v-cZy"/>
+                        <segue destination="t5M-Jd-Jxl" kind="show" identifier="signedIn" id="9ov-se-Sde"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AgV-Lg-6ha" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qdA-hK-XXf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7662.3188405797109" y="2512.5"/>
+            <point key="canvasLocation" x="-6330" y="1735"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="l2F-F9-wae">
             <objects>
-                <tabBarController modalTransitionStyle="flipHorizontal" id="t5M-Jd-Jxl" sceneMemberID="viewController">
+                <tabBarController providesPresentationContextTransitionStyle="YES" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" interfaceStyle="light" id="t5M-Jd-Jxl" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="5RV-kk-1Sa"/>
+                    <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XWW-Rt-AlU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1061,12 +1100,12 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3gO-fa-rMZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6645" y="2513"/>
+            <point key="canvasLocation" x="-6330" y="2508"/>
         </scene>
         <!--Villagers-->
         <scene sceneID="YGj-Qi-8zJ">
             <objects>
-                <navigationController id="Nyk-aG-PHL" sceneMemberID="viewController">
+                <navigationController interfaceStyle="light" id="Nyk-aG-PHL" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Villagers" image="CatGlyphOutline" selectedImage="CatGlyph" id="lMV-WM-A6w"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="fCS-g1-EqW">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -1341,8 +1380,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="9ov-se-Sde"/>
         <segue reference="tPe-W9-mw7"/>
-        <segue reference="n8q-ad-bsj"/>
+        <segue reference="KBv-Xe-kbs"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="CatGlyph" width="23.333333969116211" height="23.333333969116211"/>
